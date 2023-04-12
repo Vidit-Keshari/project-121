@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MobileNet VS Google Lens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>MobileNet Vs Google Lens</h1>
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Water Bottel.jpg" class="img_responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>Google Lens:</b>
+                <br>
+                <span>Tupperware Water Bottel</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>MobileNet:</b>
+                <br>
+                <span>Water Bottel</span>
+            </h5>
+
+            <hr>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <!--Adding a mini resulty for this test image-->
+                <h4>Google Lens detects everything about the item whereas MobileNet just tells the name. Google Lens is
+                    more Accurate</h4>
+            </div>
+        </div>
+
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Telephone.jpg" class="img_responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>Google Lens:</b>
+                <br>
+                <span>Beetel Telephone</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>MobileNet:</b>
+                <br>
+                <span>Cell Phone, Cell, Celluar Phone</span>
+            </h5>
+
+            <hr>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <!--Adding a mini resulty for this test image-->
+                <h4>Google Lens detects everything about the item whereas MobileNet just tells the name. MobileNet is
+                    also confused in multiple items. Google Lens is more Accurate</h4>
+            </div>
+        </div>
+
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Snake Plant.jpg" class="img_responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>Google Lens:</b>
+                <span>Snake Plant, Dracaena trifasciata</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>MobileNet:</b>
+                <span>Pot, Flowerpot</span>
+            </h5>
+
+            <hr>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result -</h4>
+                <!--Adding a mini resulty for this test image-->
+                <h4>Google Lens tells the name accuratly along with biological name of it, MobileNet is telling it as a
+                    pot and cannot recognize plant name. Google Lens is more Accurate</h4>
+            </div>
+        </div>
+
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Pillow.jpg" class="img_responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>Google Lens:</b>
+                <br>
+                <span>Pillow</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>MobileNet:</b>
+                <br>
+                <span>Pillow</span>
+            </h5>
+
+            <hr>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <!--Adding a mini resulty for this test image-->
+                <h4>Its a draw, as both of them can recognize it, a pillow.</h4>
+            </div>
+        </div>
+
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Chair.jpg" class="img_responsive">
+            </li>
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>Google Lens</b>
+                <br>
+                <span>Arm Chair, Chair</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On <b>MobileNet </b>
+                <br>
+                <span>Folding Chair</span>
+            </h5>
+
+            <hr>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <!--Adding a mini resulty for this test image-->
+                <h4>Google Lens is more accurate here saying it arm chair, MobileNet looses it is not a folding chair.
+                </h4>
+            </div>
+        </div>
+    </ol>
+    <br><br>
+    <div class="final_ans_div" onclick="final_ans();">
+        <h3 style="color: indigo;">Google Lens was more accurate</h3>
+        <p id="special">As I tested 5 images, all the five were recognized by Google Lens.</p>
+        <p id="special">Google Lens winning with all 5 correct where 1 was draw and was also won by MobileNet giving it
+            1 point only.</p>
+        <p id="special">Google Lens is more accurate and this is the Final result</p>
+    </div>
+    <!--Adding a script tag to write a little js code-->
+    <script>
+        //Defining the text final answer into a varible
+        var finalAns = "Google Lens is the winner and the most accurate";
+        //Defining function final_ans()
+        function final_ans() {
+            window.alert(finalAns); //showing pop up on screen with text fed in varible finalAns
+            console.log(finalAns); // printing the same pop up text on console
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(248, 100%, 47%, 1) 50%, hsla(188, 74%, 50%, 1) 90%);
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(248, 100%, 47%, 1) 50%, hsla(188, 74%, 50%, 1) 90%);
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(248, 100%, 47%, 1) 50%, hsla(188, 74%, 50%, 1) 90%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#2000EF", GradientType=1);
+    color: lightskyblue;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    color: rgb(255, 0, 90);
+}
+
+img {
+    width: 250px;
+    height: 300px;
+}
+
+h5 {
+    color: deeppink;
+    background-color: gray;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.final_ans_div {
+    color: purple !important;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#special {
+    background-color: violet;
+}
